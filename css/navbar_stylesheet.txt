@@ -1,0 +1,22 @@
+.otherNav {
+	width:100%;
+	display:inline-block;
+	background-color:#002654;
+	opacity: 0.85;
+	text-align:right;
+	border-bottom:3px solid gold;
+}
+
+.otherNav > h1 {
+	color:gold;
+	font-size: 2rem;
+	font-style:oblique;
+	text-align:left;
+	float:left;
+	margin-left:15px;
+}
+.otherNav >nav> a {
+  font-family:'helvetica';
+  text-decoration:none;
+  color:gold;
+}

@@ -1,0 +1,51 @@
+{
+					System.out.println(user + " is trying to create a new user.");
+					response = null;
+					try{
+						String username = (String)message.getObjContents().get(1);
+						String password = (String)message.getObjContents().get(2);
+						Token yourToken = (Token)message.getObjContents().get(3);
+						if (!checkPassword(password))
+						{
+							System.out.println("Something failed when trying to create user.");
+							response = new Envelope("FAIL-BADPASSWORD"); //something didn't work
+							System.out.println("Sending back FAIL response. bad password");			
+						}
+						else{
+							//	System.out.println("Token received: " + yourToken.toString());
+							System.out.println("Trying to create user: " + username + " with password: " + password);
+							if(createUser(username, yourToken))
+							{
+								System.out.println("Trying to add new username/password to database.");
+								if(my_gs.database.addItem(username, password)){
+									response = new Envelope("OK"); //Success
+									System.out.println("Sending back OK response");
+								}
+							}
+							else{
+								System.out.println("User already exists or token owner is not admin.");
+								response = new Envelope("FAIL-CUSER"); //something didn't work
+								System.out.println("Sending back FAIL response.");
+							}
+						}
+					}
+					catch(Exception e){
+						System.out.println("Something failed when trying to create user.");
+						response = new Envelope("FAIL-CUSER"); //something didn't work
+						System.out.println("Sending back FAIL response.");
+					}
+					finally {
+						Envelope wrapper = packageResponse(response);
+						output.writeObject(wrapper);
+					}
+				}
+				
+				//Phase 5: check password is of length 9 and not in the 1000 most used words. 
+	boolean checkPassword(String pass){
+		Envelope response;
+			if(pass.length()<9){
+				//response = new Envelope("FAIL-BADPASSWORD");
+				return false;
+			}
+			return true;
+	}

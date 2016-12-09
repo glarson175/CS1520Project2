@@ -1,0 +1,56 @@
+body, html {
+  margin:0;
+	font-family:'helvetica';
+	color:white;
+	background-size:100%;
+	background-image:url("../img/Pittsburgh-Nighttime.jpg");
+	background-attachment:fixed;
+
+}
+.center{
+	width: 100%;
+   
+}
+
+#pageWrap{
+	display:none;
+}
+.content-container {
+ padding: 70px 15% 10px 15%;
+}
+
+.content {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  padding: 20px;
+	height:100%;
+	border:2px solid black;
+	border-radius:20px;
+	 background: rgb(0,38,84); /* for IE */
+  background: rgba(0,38,84,0.75); 
+	display: inline-block;
+}
+.carousel-control{
+		border-radius:10px;
+	
+}
+.carousel-control:focus, .carousel-control:hover {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: 1.0;
+	
+	}
+img{
+	width:70%;
+	margin: 0 auto;
+	
+}
+div>img{
+	margin: 0 auto;
+	border:4px solid gold;
+	border-radius:30px;
+	background-color:#002564;
+}

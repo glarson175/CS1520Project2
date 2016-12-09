@@ -1,0 +1,147 @@
+body, html {
+  font-size: 62.5%;
+	margin:0;
+	font-family:'helvetica';
+	color:white;
+	
+}
+#pageWrap{
+	display:none;
+}
+element.style {
+	
+}
+body{
+	/*background-image: linear-gradient(
+      rgba(189,189,189, 0.4),
+			rgba(189,189,189, 0.4)
+    ),*/
+		background-image:url("../img/Pittsburgh-Nighttime.jpg");
+		background-size:100%;
+}
+
+#aboutMe, .notHome{
+	background-image: url("../img/Texture1.jpg");
+	background-size:100%; 
+}
+nav ul li{
+  display: inline; 
+  font-size:2rem;
+  margin:20px;
+}
+
+#HomeNav{
+	margin-top:50px;
+	background-color:#002654;
+	opacity: 0.85;
+	text-align:center;
+	border-top:2px solid gold;
+	border-bottom:2px solid gold;
+}
+
+#HomeNav > h1{
+	color:white;
+	font-size: 2.5rem;
+	font-style:oblique;
+	text-align:center;
+}
+#HomeNav > h2{
+	color:gold;
+	font-size: 2rem;
+	font-style:italic;
+	text-align:center;
+}
+
+#home{
+	background-color:#002654;
+}
+
+table, th, td {
+    border: 2px solid gold;
+}
+
+td{
+	width:25%;
+}
+
+td>img{
+	width:100%;
+	height: auto;
+}
+footer{
+
+}
+
+#form-container{
+	width:35%;
+	float:left;
+}
+input, label{
+	display:block;
+}
+textarea{
+	width:85%;
+}
+
+#contactinfo{
+	float:right;
+	text-align:right;
+	margin:20px;
+	margin-right:40px;
+	color:#002654;
+	font-weight:bold;
+}
+
+div>img{
+	float: left;
+	margin: 10px;
+	border: 4px solid gold;
+}
+
+
+#ul_holder{
+	margin-left:0px;
+	float:left;
+	clear:left;
+}
+
+#ul_random{
+	float:right;
+}
+
+#boba{
+	float:right;
+	clear:right;
+}
+
+#things_i_love{
+	float:left;
+	text-align:right;
+}
+
+div>p, li{
+	font-size:1.5rem;
+}
+
+section1{
+	display:inline-block;
+}
+
+
+nav ul li{
+  display: inline; 
+  font-size:2rem;
+  margin:20px;
+}
+nav ul li > a {
+  font-family:'helvetica';
+  text-decoration:none;
+  color:white;
+}
+nav ul li >a:hover{
+ text-decoration:underline;
+ color:gold;
+}
+nav ul li >a:active{
+  color:gold;
+}

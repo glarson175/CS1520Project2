@@ -1,0 +1,33 @@
+body, html {
+  
+	margin:0;
+	font-family:'helvetica';
+	color:white;
+	background-size:100%;
+	background-image:url("../img/Pittsburgh-Nighttime.jpg");
+	background-attachment:fixed;
+	
+}
+#pageWrap{
+	display:none;
+}
+
+.content-container {
+ padding: 70px 15% 10px 15%;
+}
+
+.content {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  padding: 20px;
+	height:100%;
+	width:100%;
+	border:2px solid black;
+	border-radius:20px;
+	background: rgb(0,38,84); /* for IE */
+  background: rgba(0,38,84,0.75); 
+	display: inline-block;
+}
+footer{
+}

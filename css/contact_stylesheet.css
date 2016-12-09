@@ -1,0 +1,79 @@
+body, html {
+  
+	margin:0;
+	font-family:'helvetica';
+	color:black;
+	background-size:100%;
+	background-image:url("../img/Pittsburgh-Nighttime.jpg");
+	background-attachment:fixed;
+	
+}
+#pageWrap{
+	display:none;
+}
+form > div{
+	text-align:center;
+	padding:15px;
+	font-size:2.5em;
+	color:white;
+}
+
+#fb{
+	height:140px;
+	clear:left;
+}
+#ig{
+	margin-left:40px;
+	
+}
+
+#sent{
+	display:none;
+	background-color:green;
+	color:white;
+	border-radius:10px;
+	padding:10px;
+	width:50%;
+}
+
+.social>img{
+	height:150px;
+	float:left;
+	margin-top:50px;
+	margin-left:30px;
+
+}
+
+input,textarea{
+	border-radius:5px;
+	color:black;
+}
+
+input{
+	color:black;
+}
+.center{
+	padding-left:50%;
+}
+#form{
+	width:100%;
+	text-align:center;
+}
+
+.content-container {
+ padding: 70px 15% 10px 15%;
+}
+
+.content {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  padding: 20px;
+	height:100%;
+	width:100%;
+	border:2px solid black;
+	border-radius:20px;
+	background: rgb(0,38,84); /* for IE */
+  background: rgba(0,38,84,0.75); 
+	display: inline-block;
+}

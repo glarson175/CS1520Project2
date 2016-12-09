@@ -1,0 +1,78 @@
+body, html {
+  font-size: 62.5%;
+	margin:0;
+	font-family:'helvetica';
+
+}
+
+form label{
+  font-size:2rem;
+}
+
+.otherNav {
+	width:100%;
+	display:inline-block;
+	background-color:#002654;
+	color:gold;
+	font-size: 2rem;
+	font-style:oblique;
+	border-bottom:3px solid gold;
+	position:fixed;
+	margin-top:0;
+	z-index:1000;
+	
+}
+
+.otherNav > h1 {
+	color:gold;
+	font-size: 2.5rem;
+	text-align:left;
+	float:left;
+	margin-left:20px;
+}
+nav ul {
+	float:right;
+	margin-bottom: -3px;
+}
+nav ul li{
+  display: inline-block; 
+  font-size:2rem;
+  margin:20px;
+}
+
+nav ul li > a {
+  font-family:'helvetica';
+  text-decoration:none;
+  color:white;
+}
+nav ul li >a:hover{
+ text-decoration:underline;
+ color:gold;
+}
+nav ul li >a:active{
+  color:gold;
+}
+footer{
+	
+	position:fixed;
+	width:100%;
+}
+footer p{
+	color:#002654;
+  font-size:2rem;
+  background-color:gold;
+	text-align:center;
+}
+footer ul {
+  list-style:none;
+  padding:0;
+}
+footer ul li {
+  font-weight:bold;
+  font-size:3rem;
+  display: block; 
+  margin-left:20px;
+}
+form label{
+  font-size:2rem;
+}
